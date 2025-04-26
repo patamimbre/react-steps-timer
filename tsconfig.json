@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2017", /* Modern enough for async/await */
+    "module": "ESNext", /* Let Rollup handle module bundling */
+    "lib": [
+      "DOM",
+      "ES2017"
+    ], /* Include DOM and ES features */
+    "jsx": "react-jsx", /* Use the new JSX transform */
+    "declaration": true, /* Emit .d.ts files */
+    "declarationDir": "dist", /* Output declarations into dist/ */
+    "outDir": "dist", /* Redirect JS output to dist/ */
+    "strict": true, /* Enable all strict type-checking options */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true, /* Ensure each file can be transpiled independently */
+    "skipLibCheck": true, /* Speed up builds by skipping .d.ts checks */
+    "types": [] /* Empty array to ignore implicit type dependencies */
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "react-steps-timer",
+  "version": "1.0.0",
+  "description": "A flexible React hook & context provider for timing total duration and multiple parallel steps with start, pause, resume, stop and reset controls.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest --environment jsdom",
+    "prepare": "npm run build",
+    "lint": "eslint \"src/**/*.ts?(x)\""
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "timer",
+    "stopwatch",
+    "steps",
+    "parallel",
+    "context"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patamimbre/react-steps-timer.git"
+  },
+  "author": "Germán Castro",
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "jsdom": "^26.1.0",
+    "rollup": "^4.40.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}
